@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Еко Младежи Айтос</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #2e7d32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #1b5e20;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #1b5e20;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 Еко Младежи Айтос</h1>
+    <p>Заедно за по-зелено бъдеще</p>
+</header>
+
+<nav>
+    <a href="#about">За нас</a>
+    <a href="#initiatives">Инициативи</a>
+    <a href="#gallery">Галерия</a>
+    <a href="#news">Новини</a>
+    <a href="#contact">Контакт</a>
+</nav>
+
+<section id="about">
+    <h2>Кои сме ние?</h2>
+    <p>Еко Младежи Айтос е младежка организация, създадена през 2025 г. от ученици, които вярват, че промяната започва от нас.</p>
+</section>
+
+<section id="initiatives">
+    <h2>Нашите инициативи</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌳 Залесяване</h3>
+            <p>Организираме засаждане на дървета в региона.</p>
+        </div>
+        <div class="card">
+            <h3>♻️ Почистване</h3>
+            <p>Месечни кампании за почистване на паркове и реки.</p>
+        </div>
+        <div class="card">
+            <h3>🐦 Къщички за птици</h3>
+            <p>Поставяме и поддържаме къщички за птици.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Галерия</h2>
+    <img src="https://source.unsplash.com/800x400/?trees" alt="">
+    <img src="https://source.unsplash.com/800x400/?nature" alt="">
+</section>
+
+<section id="news">
+    <h2>Новини</h2>
+    <p>📅 12 март 2025 – Засадихме 50 дръвчета в парк Айтос.</p>
+</section>
+
+<section id="contact">
+    <h2>Свържи се с нас</h2>
+    <form>
+        <input type="text" placeholder="Вашето име" required>
+        <input type="email" placeholder="Вашият имейл" required>
+        <textarea rows="5" placeholder="Вашето съобщение"></textarea>
+        <button type="submit">Изпрати</button>
+    </form>
+</section>
+
+<section>
+    <h2>Къде се намираме?</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Aytos,Bulgaria&output=embed"
+        width="100%" height="300" style="border:0;">
+    </iframe>
+</section>
+
+<footer>
+    <p>© 2025 Еко Младежи Айтос | Заедно за по-зелено бъдеще 🌿</p>
+</footer>
+
+</body>
+</html>
