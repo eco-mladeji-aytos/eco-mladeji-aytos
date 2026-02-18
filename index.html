@@ -211,6 +211,16 @@ section{
     max-width:1000px;
     margin:auto;
     padding:40px 20px;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1s ease;
+}
+
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
 }
 
 h2{
@@ -345,6 +355,18 @@ footer{
 <footer>
 <p>© 2026 Еко Младежи Айтос | Заедно за по-зелено бъдеще 🌿</p>
 </footer>
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if(sectionTop < window.innerHeight - 100){
+      section.classList.add("show");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
